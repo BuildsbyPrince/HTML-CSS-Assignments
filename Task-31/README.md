@@ -1,0 +1,46 @@
+# Task 31: Create a Simple Responsive Menu Bar Using `display: flex`
+
+**What I Did:** I built a responsive navigation bar using `display: flex`, `justify-content: space-between`, and `align-items: center`.
+
+**My Code (`task31.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Menu Bar</title>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #0f172a;
+      padding: 14px 24px;
+      font-family: sans-serif;
+    }
+    .logo { color: white; font-weight: bold; font-size: 18px; }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a { color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">FlexBrand</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+```
+
+---
