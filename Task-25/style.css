@@ -1,0 +1,26 @@
+:root {
+  --brand: #0f766e;
+  --bg: #f1f5f9;
+  --text: #0f172a;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+}
+
+nav {
+  background-color: var(--brand);
+  padding: 12px 20px;
+  margin-bottom: 24px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 600;
+}
