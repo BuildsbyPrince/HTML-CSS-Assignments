@@ -1,0 +1,27 @@
+# Task 7: Simple Resume-Style Page Using Only Text Elements
+
+**What I Did:** I designed a simple resume page using only basic text elements (`<h1>`, `<h2>`, `<p>`, `<strong>`, `<em>`, `<hr>`, and `<br>`).
+
+**My Code (`task7.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Resume</title>
+</head>
+<body>
+  <h1>Rahul Sharma</h1>
+  <p><strong>Email:</strong> rahul@example.com | <strong>Phone:</strong> +91 9876543210</p>
+  <hr>
+  <h2>Professional Summary</h2>
+  <p>Motivated student learning <em>HTML5</em> and <em>CSS3</em> web development.</p>
+  <h2>Education</h2>
+  <p><strong>B.Tech in Computer Science</strong> - ABC College (2022–2026)</p>
+  <h2>Experience</h2>
+  <p><strong>Web Intern</strong> - XYZ Tech<br>Built static web pages and forms.</p>
+</body>
+</html>
+```
+
+---
