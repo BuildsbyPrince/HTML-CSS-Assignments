@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 45 - Finished Fully Responsive Landing Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; color: #1e293b; line-height: 1.6; }
+    img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
+
+    /* Navbar (Flexbox) */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: #0f172a;
+      color: white;
+    }
+    .logo { font-size: 1.4rem; font-weight: bold; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { color: white; text-decoration: none; }
+
+    /* Hero (Flexbox) */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 40px;
+      background: #f8fafc;
+      gap: 32px;
+    }
+    .hero-text { flex: 1; }
+    .hero-text h1 { font-size: 2.4rem; margin-bottom: 12px; }
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* Features (CSS Grid) */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 50px 40px;
+    }
+    .card {
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: white;
+    }
+
+    /* CTA Banner */
+    .cta {
+      text-align: center;
+      padding: 50px 20px;
+      background: #eff6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: white;
+    }
+
+    /* Tablet Breakpoint (768px) */
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; padding: 40px 24px; }
+      .features { grid-template-columns: repeat(2, 1fr); padding: 40px 24px; }
+    }
+
+    /* Mobile Breakpoint (480px) */
+    @media (max-width: 480px) {
+      .navbar { flex-direction: column; gap: 12px; padding: 16px; }
+      .nav-links { flex-direction: column; align-items: center; gap: 8px; }
+      .hero-text h1 { font-size: 1.8rem; }
+      .features { grid-template-columns: 1fr; padding: 24px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LaunchPad</div>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#cta">Start</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Launch Your Project Faster</h1>
+        <p>My complete, responsive landing page built with Flexbox, CSS Grid, and Media Queries.</p>
+        <a href="#cta" class="btn">Get Started Free</a>
+      </div>
+      <div>
+        <img src="https://picsum.photos/450/280" alt="App dashboard preview">
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="card"><h3>Fast Setup</h3><p>Clean semantic HTML5 structure.</p></div>
+      <div class="card"><h3>Hybrid Layout</h3><p>Combines Flexbox and CSS Grid effectively.</p></div>
+      <div class="card"><h3>Mobile Ready</h3><p>Adapts seamlessly to desktop, tablet, and mobile.</p></div>
+    </section>
+
+    <section id="cta" class="cta">
+      <h2>Ready to Build Your Website?</h2>
+      <p>Start coding responsive layouts today.</p>
+      <a href="#contact" class="btn">Join Now</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2026 LaunchPad. All rights reserved.</p>
+  </footer>
+</body>
+</html>

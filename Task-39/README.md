@@ -1,0 +1,54 @@
+# Task 39: Build a Responsive Product Grid with a Header and Sidebar Using Grid
+
+**What I Did:** I built a store layout using CSS Grid for the outer page structure (header + sidebar + main) and a nested auto-fitting Grid for the product cards.
+
+**My Code (`task39.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Store with Header & Sidebar</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .page-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      min-height: 100vh;
+    }
+    header {
+      grid-column: 1 / -1;
+      background: #0f172a;
+      color: white;
+      padding: 16px;
+    }
+    aside { background: #f1f5f9; padding: 16px; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+      padding: 16px;
+    }
+    .product-card {
+      border: 1px solid #cbd5e1;
+      padding: 16px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-grid">
+    <header><h2>Store Header</h2></header>
+    <aside><strong>Filter</strong><p>All Items</p></aside>
+    <main class="products">
+      <div class="product-card">Product A</div>
+      <div class="product-card">Product B</div>
+      <div class="product-card">Product C</div>
+    </main>
+  </div>
+</body>
+</html>
+```
+
+---
