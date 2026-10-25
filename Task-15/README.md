@@ -1,0 +1,57 @@
+# Task 15: Submit the Completed Personal Blog / Portfolio Page
+
+**What I Did:** I combined internal navigation, accessible images, lists, and semantic tags to build my completed personal blog and portfolio page.
+
+**My Code (`task15.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rahul's Blog & Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Rahul's Personal Blog & Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bio">
+      <h2>About Me</h2>
+      <img src="avatar.jpg" alt="Rahul Sharma working on a laptop" width="140">
+      <p>Hello! I am a web developer sharing my coding journey and projects.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Semantic HTML5</li>
+        <li>CSS3 & Responsive Layouts</li>
+        <li>Git & GitHub Workflow</li>
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <article>
+        <h3>How I Built My First Webpage</h3>
+        <p>Learning HTML tags, lists, and semantic structure made building web pages simple and fun.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Follow me on <a href="https://github.com">GitHub</a></p>
+  </footer>
+</body>
+</html>
+```
+
+---
