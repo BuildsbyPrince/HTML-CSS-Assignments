@@ -1,0 +1,50 @@
+# Task 21: Convert One HTML-Only Page from Week 4 into a Lightly Styled Page
+
+**What I Did:** I took my HTML-only registration page and styled it using CSS with a clean font, background color, form padding, and button styling.
+
+**My Code (`task21.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lightly Styled Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 30px;
+      color: #333;
+    }
+    form {
+      background: #ffffff;
+      padding: 20px;
+      max-width: 320px;
+      border: 1px solid #dcdcdc;
+    }
+    input {
+      width: 90%;
+      padding: 6px;
+      margin-top: 4px;
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Registration</h1>
+  <form>
+    <label>Full Name:<br><input type="text" required></label><br><br>
+    <label>Email:<br><input type="email" required></label><br><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
+```
+
+---
