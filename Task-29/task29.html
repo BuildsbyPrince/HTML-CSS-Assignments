@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positioned Hero Section</title>
+  <style>
+    .hero {
+      position: relative;
+      height: 280px;
+      background: url('https://picsum.photos/800/300') center/cover;
+      color: white;
+      font-family: sans-serif;
+      padding: 60px 40px;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+    .badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #e11d48;
+      padding: 6px 12px;
+      border-radius: 4px;
+      z-index: 3;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <span class="badge">FEATURED</span>
+    <div class="hero-text">
+      <h1>Master CSS Positioning</h1>
+      <p>Layered cleanly using relative, absolute, and z-index properties.</p>
+    </div>
+  </section>
+</body>
+</html>
