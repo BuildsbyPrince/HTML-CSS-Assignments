@@ -1,0 +1,56 @@
+# Task 34: Build a Responsive Navbar + Hero Section Using Flexbox
+
+**What I Did:** I built a responsive Navbar and two-column Hero section using Flexbox and `flex-wrap`.
+
+**My Code (`task34.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navbar & Hero</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background: #0f172a;
+      color: white;
+    }
+    .nav-links { display: flex; gap: 16px; }
+    .nav-links a { color: white; text-decoration: none; }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 40px 32px;
+      gap: 24px;
+      background: #f8fafc;
+    }
+    .hero-text { flex: 1 1 280px; }
+    .hero-img { flex: 1 1 280px; max-width: 100%; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <strong>BrandLogo</strong>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Responsive Flexbox Hero</h1>
+      <p>Displays side-by-side on desktop and stacks on smaller screens.</p>
+    </div>
+    <img class="hero-img" src="https://picsum.photos/400/240" alt="Hero preview">
+  </section>
+</body>
+</html>
+```
+
+---
