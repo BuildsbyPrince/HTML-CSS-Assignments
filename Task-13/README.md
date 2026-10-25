@@ -1,0 +1,41 @@
+# Task 13: Create a Structured 'My College / My Course' Info Page Using Lists
+
+**What I Did:** I built an information page about my college and course using unordered (`<ul>`), ordered (`<ol>`), and description (`<dl>`) lists.
+
+**My Code (`task13.html`):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My College & Course</title>
+</head>
+<body>
+  <h1>ABC Institute of Technology</h1>
+
+  <h2>Available Departments (Unordered List)</h2>
+  <ul>
+    <li>Computer Science & Engineering</li>
+    <li>Information Technology</li>
+    <li>Electronics & Communication</li>
+  </ul>
+
+  <h2>Course Progression (Ordered List)</h2>
+  <ol>
+    <li>Semester 1: Fundamentals of Programming</li>
+    <li>Semester 2: Data Structures</li>
+    <li>Semester 3: Web Development (HTML & CSS)</li>
+  </ol>
+
+  <h2>Core Subjects (Description List)</h2>
+  <dl>
+    <dt>HTML5</dt>
+    <dd>Structures content on the web using semantic elements.</dd>
+    <dt>CSS3</dt>
+    <dd>Styles and layouts web pages across screen sizes.</dd>
+  </dl>
+</body>
+</html>
+```
+
+---
